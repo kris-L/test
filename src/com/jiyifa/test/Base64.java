@@ -1,4 +1,4 @@
-package com.kris.test;
+package com.jiyifa.test;
 
 import java.io.UnsupportedEncodingException;
 

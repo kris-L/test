@@ -1,4 +1,4 @@
-package com.kris.test;
+package com.jiyifa.test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -24,8 +24,8 @@ import javax.crypto.spec.SecretKeySpec;
  *
  */
 
-public class DESUtil {
-	public static byte[] iv = { 8, 7, 1, 5, 3, 2, 4, 6 };
+public class DESUtilSuSuan {
+	public static byte[] iv = { 1,2,3,4,5,6,7,8};
 	public static final char[] legalChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
 			.toCharArray();
 
@@ -134,9 +134,6 @@ public class DESUtil {
 		int j = i - 3;
 		int k = 0;
 		int m = 0;
-//		for (m = 0; m < i; m++) {
-//			
-//		}
 		
 		for (;;) {
 		if (k > j) {
@@ -214,4 +211,5 @@ public class DESUtil {
 		localCipher.init(1, localSecretKeySpec, localIvParameterSpec);
 		return encode(localCipher.doFinal(paramString1.getBytes()));
 	}
+	
 }

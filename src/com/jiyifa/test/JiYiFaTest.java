@@ -1,23 +1,28 @@
-package com.kris.test;
+package com.jiyifa.test;
 
 import java.io.DataOutputStream;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLEncoder;
-import com.kris.test.IoUtil;;
 
-public class Test {
+import com.jiyifa.test.IoUtil;
+
+public class JiYiFaTest {
 
 	public static int count = 0;
 	public static int HTTP_200 = 200;
 
 	public static void main(String[] args) {
 		
-		Test test = new Test();
-		//获取超级记忆的注册码
-		test.getRegistrationCode();
-		//获取闪电速算的注册码
-		test.getRegistrationCodeSuSuan();
+//		Test test = new Test();
+//		//获取超级记忆的注册码
+//		test.getRegistrationCode();
+//		//获取闪电速算的注册码
+//		test.getRegistrationCodeSuSuan();
+		
+		
+		System.out.println("URI="+URI.create("http://www.czbbb.cn:8080/czbbb/czbbb.action?methoh=1000"));
 		
 	}
 
